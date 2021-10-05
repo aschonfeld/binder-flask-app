@@ -1,9 +1,13 @@
+import dtale
+import pandas as pd
+
 from flask import Flask
 
-app = Flask(__name__)
+df = pd.DataFrame([1,2,3,4,5])
+dtale.show(
+    df,
+    port=5030,
+    app_root='/user/aschonfeld-binder-flask-app-qrv8kj1c/proxy/5030',
+    subprocess=False,
+)
 
-@app.route('/home')
-def home():
-    return "Flask App in MyBinder"
-
-app.run(port=5030)
