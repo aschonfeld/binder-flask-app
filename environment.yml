@@ -4,5 +4,5 @@ dependencies:
   - python=3.6.8
   - flask
   - nbserverproxy
-  - dtale
+  - dtale=1.58.3
 
